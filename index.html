@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="container-wrapper">
+                <div class="header">
+                    <div class="todo-logo">
+                        <img class="todo-img" src="images/to-do-logo.png" alt="logo">
+                    </div>
+                    <h2>to-do app</h2>
+                </div>
+                <div class="second_header_outer">
+                    <div class="second_header">
+                       <form action="#">
+                        <div class="add-section">
+                            <ul>
+                                <li>
+                                    <span class="add-task">add new task</span>
+                                    <input type="text" name="todo-input">
+                                    <button type="button">add task</button>
+                                </li>
+                            </ul>
+                        </div>
+                       </form>
+                    </div>
+                </div>
+                <div class="tasks-container">
+                    <div class="tasks-outer">
+                        <div class="incomplete-tasks">
+                            <div class="com-outer">
+                                <h3>INCOMPLETE TASKS</h3>
+                                <div class="tasks-lists">
+                                    <form action="#">
+                                        <ul>
+                                            <li class="list-3">
+                                                <div class="list">
+                                                    <input type="checkbox">
+                                                    <span>Task Name</span>
+                                                </div>
+                                                <button type="button" class="update-btn">Update</button>
+                                            </li>
+                                            <li class="list-3">
+                                                <div class="list">
+                                                    <input type="checkbox">
+                                                    <span>Task Name</span>
+                                                </div>
+                                                <button type="button" class="update-btn">Update</button>
+                                            </li>
+                                            <li class="list-3">
+                                                <div class="list">
+                                                    <input type="checkbox">
+                                                    <span>Task Name</span>
+                                                </div>
+                                                <button type="button" class="update-btn">Update</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completed-tasks">
+                            <div class="com-outer">
+                                <h3>COMPLETED TASKS</h3>
+                                <div class="tasks-lists">
+                                    <form action="#">
+                                        <ul>
+                                            <li class="list-3">
+                                                <div class="list">
+                                                    <input type="checkbox">
+                                                    <span>Task Name</span>
+                                                </div>
+                                                <button type="button" class="del-btn">Delete</button>
+                                            </li>
+                                        </ul>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

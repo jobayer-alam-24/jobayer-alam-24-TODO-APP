@@ -1,0 +1,134 @@
+/* ------------------------------ */
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+.todo-img{
+    width: 150px;
+}
+li{
+    list-style-type: none;
+}
+/* -------------------------- */
+main{
+    margin: 5%;
+    max-width: 800px;
+    width: 80%;
+    margin: 5% auto;
+}
+.container{
+    max-width: 900px;
+    background-color: #d86ebd;
+    padding: 4% 5%;
+    border: 5px inset rgb(219, 136, 178);
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.header{
+    text-align: center;
+}
+.header h2{
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 3%;
+}
+.add-section{
+    margin-top: 5%;
+    background-color: #8f2c76;
+    padding: 3% 2%;
+    box-shadow: rgba(44, 6, 39, 0.4) 0px 0px 0px 2px, rgba(44, 6, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 10px;
+}
+.add-section ul li{
+    text-align: center;
+    text-transform: capitalize;
+}
+.add-section ul li .add-task{
+    color: white;
+    font-size: 1.2rem;
+    margin-right: 1%;
+}
+.add-section ul li input{
+    padding: 3px 3px;
+    outline: none;
+    margin-right: 1%;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.add-section ul li button{
+    outline: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    padding: 3px 7px;
+}
+.tasks-container{
+    margin-top: 7%;
+}
+.tasks-outer{
+    display: grid;
+    grid-template-columns: 350px 300px;
+    gap: 6%;
+}
+.com-outer{
+    color: white;
+    padding: 4% 5%;
+    background-color: #bd59a4;
+    box-shadow: rgba(161, 35, 145, 0.4) 0px 0px 0px 2px, rgba(158, 25, 158, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.list-3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5% 0;
+    padding-bottom: 4%;
+    border-bottom: 2px solid rgb(133, 44, 110);
+}
+.list-3 span{
+    font-size: 1.2rem;
+}
+.update-btn {
+    padding: 5px 8px;
+    background-color: hotpink;
+    border: 2px solid hotpink;
+    color: white;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+.del-btn{
+    padding: 5px 8px;
+    background-color: rgb(219, 17, 51);
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px; 
+}
+.update-btn:focus,
+.del-btn:focus {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+
+.update-btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transform: translateY(-2px);
+}
+
+.update-btn:active,
+.del-btn:active {
+    box-shadow: rgba(73, 7, 53, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    transform: translateY(2px);
+}
+@media screen and (max-width: 943px){
+    .tasks-outer{
+        grid-template-columns: 1fr;
+    }
+    .com-outer{
+        margin-bottom: 5%;
+    }
+}
